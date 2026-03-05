@@ -68,6 +68,28 @@ ul {
     list-style-type: square;
 }
 
+.content .highlight {
+    margin-top: 50px;
+}
+
+.hl_image {
+    
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.hl_image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Image Animation Trigger */
+.hl_image:hover img {
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
+
 /* ghost column for formatting */
 .right {
     flex: 1;
