@@ -54,7 +54,7 @@ footer {
 .left{
     flex: 1; 
     padding: 20px;
-    background: #ddd;
+    background: linear-gradient(to bottom, #ddd 0%,#00563f 100%);
 }
 
 /* main text */
@@ -92,7 +92,7 @@ ul {
 
 /* ghost column for formatting */
 .right {
-    flex: 1;
+    flex: 1; 
     padding: 20px;
 }
 
