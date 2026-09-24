@@ -44,6 +44,8 @@ h3 { margin-bottom: .35rem; font-size: 1rem; }
 .left, .right { flex: 1; }
 .left { padding: 1.25rem; background: linear-gradient(to bottom, #ddd 0%, var(--forest) 100%); }
 .sidebar-project-image { margin-top: 1.25rem; border-radius: 10px; }
+.sidebar-image.is-pending { opacity: 0; transform: translateY(18px); }
+.sidebar-image.is-visible { opacity: 1; transform: translateY(0); transition: opacity .65s ease-out, transform .65s ease-out; }
 .center { flex: 2; max-width: 900px; padding: 2rem; }
 section + section { margin-top: 2.25rem; }
 ul { margin: .5rem 0 0; padding-left: 1.25rem; list-style-type: square; }
@@ -76,4 +78,9 @@ footer p { margin: 0; }
     .center { padding: 1.5rem; }
     .entry-heading { display: block; }
     .entry-heading span { white-space: normal; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .sidebar-image.is-pending,
+    .sidebar-image.is-visible { opacity: 1; transform: none; transition: none; }
 }
