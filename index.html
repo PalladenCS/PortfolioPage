@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Palladen Lee, a Computer Science student and aspiring software engineer.">
     <title>Palladen Lee | Portfolio</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="style.css">
@@ -9,80 +11,116 @@
 <body>
     <header>
         <h1>Palladen Lee</h1>
-        <nav class="sub-header">
-            <a href="https://www.linkedin.com/in/palladen-lee/">LinkedIn</a>
-            <a href="https://github.com/PalladenCS">Github</a>
+        <p class="tagline">Computer Science Student · Sacramento State</p>
+        <nav class="sub-header" aria-label="Professional links">
+            <a href="mailto:palladenlee@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/palladen-lee/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/PalladenCS" target="_blank" rel="noreferrer">GitHub</a>
         </nav>
     </header>
 
-    <div class="content">
-        <div class="left"><img src="images\stairs_trees1.jpg"></div>
-        <div class="center">
-            <h2>Computer Science Major at Sacramento State</h2>
-            <p>
-                Highly motivated Computer Science major seeking an entry-level 
-                programming or engineering position. Bringing proven real-world 
-                reliability from 5+ years of technical advising, logistics, 
-                and customer service, combined with a strong foundation in 
-                programming, networking, and software development.
-            </p>
-            <p>
-                SKILLS
-                <ul>
-                    <li>
-                        Relevant Coursework: Data Structures & Algorithms,  Operating Systems,  Database Management,  
-                        Software Engineering,  Discrete Mathematics, Machine Learning, Networking
-                    </li>
-                    <li>
-                        Languages & Tools: C++,  Java,  Python,  SQL,  HTML/CSS, Git, MySQL, Excel, Git
-                    </li>
-                </ul>
-            </p>
-            <p>
-                AWARDS & LEADERSHIP
-                <ul>
-                    <li>
-                        Dean’s Honor List for Fall 2025
-                    </li>
-                    <li>
-                        Data Science Club Treasurer (Spring 2025) - Coordinated and purchased shirts for Datafest 2025
-                    </li>
-                    <li>
-                        Relevant Academic Achievement: Earned best visualization at DataFest 2025 with my team
-                    </li>
-               </ul>
-            </p>
-                
-            
-            <div class="highlight">
-                    <h2>FEATURED PROJECT: ROOM FINDER</h2>
-                    <p>
-                        (Python, Pandas, Data Cleaning)
-                    </p>
-            </div>
-            <div class="hl_image">
-                <a href="https://please-give-us-an-a.vercel.app/" target="_blank">
-                    <img src="images/roomfinder.png" alt="Description of image">
-                </a>
-            </div>
-            <div class="hl_content">
-                <p>
-                    <ul>
-                        <li>
-                            Developed a campus resource finder by processing a large CSV of scraped website data to determine real-time classroom availability.
-                        </li>
-                        <li>
-                            Utilized the Pandas library in Python to clean, structure, and transform a dataset of scheduling records, creating a normalized CSV output for group members to integrate into the application back-end.
-                        </li>
-                    </ul>
-                </p>
-            </div>
-        </div>
-        <div class="right">
-            <!-- Ghost Column -->
-        </div>
-    </div>
+    <main class="content">
+        <aside class="left" aria-label="Portfolio imagery">
+            <img src="images/stairs_trees1.jpg" alt="Tree-lined stairs on the Sacramento State campus">
+            <img class="sidebar-project-image" src="images/best_visualization.jpg" alt="Data visualization created for DataFest 2025">
+            <img class="sidebar-project-image" src="images/sac-state-event.jpg" alt="Palladen Lee at a Sacramento State College of Engineering and Computer Science event">
+            <img class="sidebar-project-image" src="images/safeplate-team.jpg" alt="SafePlate Technologies project team presenting their work">
+        </aside>
 
-    <footer><p>Copyright © 2026 Palladen Lee</p></footer>
+        <div class="center">
+            <section aria-labelledby="about-heading">
+                <h2 id="about-heading">About Me</h2>
+                <p>Computer Science senior graduating in December 2026, with experience developing Python applications, cleaning public-sector data, and building modern web projects.
+                    Some of my favorite topics include data science, machine learning, and computer graphics.
+                    As a software engineer I enjoy working close with hardware and people.</p>
+            </section>
+
+            <section aria-labelledby="education-heading">
+                <h2 id="education-heading">Education</h2>
+                <p><strong>California State University, Sacramento</strong> · B.S. in Computer Science<br>Expected December 2026</p>
+                <p class="muted">Coursework: Data Structures &amp; Algorithms, Operating Systems, Database Management, Software Engineering, Machine Learning, Networking,
+                    and GPU Programming.</p>
+                <p><strong>American River College</strong> · A.S. in Social Science<br>Graduated Spring 2024</p>
+            </section>
+
+            <section aria-labelledby="skills-heading">
+                <h2 id="skills-heading">Technical Skills</h2>
+                <ul>
+                    <li><strong>Languages:</strong> Python, Java, C++, C, SQL, HTML/CSS</li>
+                    <li><strong>Frameworks &amp; libraries:</strong> React, KivyMD, Pandas, OpenGL, CUDA</li>
+                    <li><strong>Data &amp; platforms:</strong> SQLite, Supabase, Excel, Google Colab, Raspberry Pi</li>
+                    <li><strong>Tools &amp; practices:</strong> Git, Docker, Jira, software testing, Agile sprints</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="experience-heading">
+                <h2 id="experience-heading">Experience</h2>
+                <article class="entry">
+                    <div class="entry-heading">
+                        <h3>Student Assistant · California State Water Resources Control Board</h3>
+                        <span>2026–Present</span>
+                    </div>
+                    <ul>
+                        <li>Clean and standardize drinking-water data in Excel to support WaterTAP, a new enterprise system for information access, reporting, and workflows.</li>
+                        <li>Build data dictionaries that define project fields and prepare existing data for migration.</li>
+                        <li>Coordinate priorities and project direction with teammates to keep work moving independently.</li>
+                    </ul>
+                </article>
+                <article class="entry">
+                    <div class="entry-heading">
+                        <h3>Volunteer Software Engineer · SafePlate Technologies</h3>
+                        <span>2026–Present</span>
+                    </div>
+                    <ul>
+                        <li>Develop Arceo’s Python GUI with KivyMD and SQLite for a Raspberry Pi device that detects gluten and other food allergens.</li>
+                        <li>Build clear screens and workflows for operating tests, reviewing hardware-generated data, and understanding results.</li>
+                        <li>Coordinate with hardware and software contributors to align GUI workflows with device behavior and user requirements.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="highlight" aria-labelledby="projects-heading">
+                <h2 id="projects-heading">Featured Projects</h2>
+                <article class="project room-finder">
+                    <h3>Room Finder <span>Python · Pandas · Data Cleaning</span></h3>
+                    <ul>
+                        <li>Developed a campus resource finder by processing a large CSV of scraped website data to determine classroom availability.</li>
+                        <li>Used Pandas to clean, structure, and transform scheduling records into a normalized CSV for integration into the application back end.</li>
+                    </ul>
+                    <a class="project-link room-finder-link" href="https://please-give-us-an-a.vercel.app/" target="_blank" rel="noreferrer">
+                        <img src="images/roomfinder.png" alt="Room Finder project preview">
+                        <span>View the live project →</span>
+                    </a>
+                </article>
+                <article class="project">
+                    <h3>Machine Learning Group Project <span>Python · Pandas · Google Colab</span></h3>
+                    <ul>
+                        <li>Reduced 200,000+ health and environmental records to a balanced 50,000-record sample and trained tree-based models reaching 68% accuracy.</li>
+                        <li>Collaborated on cleaning data, exploring features, evaluating models, and interpreting environmental factors connected to thyroid cancer outcomes.</li>
+                    </ul>
+                </article>
+                <article class="project">
+                    <h3>Multifunctional 2D Graphics Engine <span>Java · Modern OpenGL</span></h3>
+                    <ul>
+                        <li>Built a modular 2D rendering engine using Modern OpenGL, Vertex Buffer Objects, and Vertex Array Objects to manage geometry efficiently.</li>
+                        <li>Applied object-oriented design and a Driver class to separate rendering responsibilities and support iterative development.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section aria-labelledby="recognition-heading">
+                <h2 id="recognition-heading">Leadership &amp; Recognition</h2>
+                <ul>
+                    <li>Dean’s Honor List, Fall 2025 and Spring 2026</li>
+                    <li>Data Science Club Treasurer, Spring 2025; coordinated purchasing for DataFest 2025 materials</li>
+                    <li>Best Visualization, DataFest 2025; member of a collaborative competition team</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="right" aria-hidden="true"></div>
+    </main>
+
+    <footer><p>© 2026 Palladen Lee</p></footer>
 </body>
 </html>
